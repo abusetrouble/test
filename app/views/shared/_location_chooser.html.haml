@@ -1,0 +1,5 @@
+#location_chooser
+  %label= :city_name.l
+  = select_tag(:city_id, options_from_collection_for_select(City.get_all, "id", "name", city_id), {:include_blank => false})
+
+
